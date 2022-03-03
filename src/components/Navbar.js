@@ -8,9 +8,10 @@ background: red;
 
 const Navbar = () => {
   return (
-    <div>
+    <Nav>
+      <Logo>ELIXR</Logo>
         <h1>Navbar</h1>
-    </div>
+    </Nav>
   );
 };
 
