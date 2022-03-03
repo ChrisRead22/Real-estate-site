@@ -9,7 +9,11 @@ background: red;
 
 const Logo = styled(Link)`
 color: #fff;
-`
+`;
+
+const MenuBars = styled.i``;
+
+const NavMenu = styled.div``;
 
 
 const Navbar = () => {
