@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Nav = styled.nav`
 height: 60px;
@@ -21,9 +21,7 @@ const Navbar = () => {
     <Nav>
       <Logo>ELIXR</Logo>
       <MenuBars />
-      <NavMenu>
-        
-      </NavMenu>
+      <NavMenu />
         <h1>Navbar</h1>
     </Nav>
   );
