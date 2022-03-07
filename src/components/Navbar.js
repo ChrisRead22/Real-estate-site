@@ -5,7 +5,7 @@ import { menuData } from '../data/MenuData';
 
 const Nav = styled.nav`
 height: 60px;
-background: red;
+background: #000;
 `;
 
 const Logo = styled(Link)`
@@ -16,7 +16,9 @@ const MenuBars = styled.i``;
 
 const NavMenu = styled.div``;
 
-const NavMenuLinks = styled(Link)``;
+const NavMenuLinks = styled(Link)`
+color: #fff
+`;
 
 
 const Navbar = () => {
@@ -31,7 +33,6 @@ const Navbar = () => {
           </NavMenuLinks>
         })}
       </NavMenu>
-        <h1>Navbar</h1>
     </Nav>
   );
 };
