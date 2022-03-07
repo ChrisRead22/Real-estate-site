@@ -5,6 +5,7 @@ import { menuData } from '../data/MenuData';
 
 const Nav = styled.nav`
 height: 60px;
+display: flex;
 background: #000;
 `;
 
@@ -27,11 +28,11 @@ const Navbar = () => {
       <Logo to="/">ELIXR</Logo>
       <MenuBars />
       <NavMenu>
-        {menuData.map((item, index) => {
+        {menuData.map((item, index) => (
           <NavMenuLinks to={item.link} key={index}>
             {item.title}
           </NavMenuLinks>
-        })}
+        ))}
       </NavMenu>
     </Nav>
   );
