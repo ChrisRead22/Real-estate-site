@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
 
@@ -21,10 +21,11 @@ align-items: center;
 padding: 0 1rem;
 height: 100%;
 cursor: pointer;
+text-decoration: none;
 `
 
 const Logo = styled(Link)`
-color: #fff;
+${NavLink}
 font-style: italic;
 `;
 
@@ -33,7 +34,7 @@ const MenuBars = styled.i``;
 const NavMenu = styled.div``;
 
 const NavMenuLinks = styled(Link)`
-color: #fff
+${NavLink}
 `;
 
 
