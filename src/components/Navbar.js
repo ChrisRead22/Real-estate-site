@@ -6,11 +6,17 @@ import { menuData } from '../data/MenuData';
 const Nav = styled.nav`
 height: 60px;
 display: flex;
+justify-content: space-between;
+padding: 1rem 2rem;
+z-index: 100;
+position: fixed;
+width: 100%
 background: #000;
 `;
 
 const Logo = styled(Link)`
 color: #fff;
+
 `;
 
 const MenuBars = styled.i``;
