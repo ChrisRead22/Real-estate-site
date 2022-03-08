@@ -31,7 +31,10 @@ font-style: italic;
 
 const MenuBars = styled.i``;
 
-const NavMenu = styled.div``;
+const NavMenu = styled.div`
+display: flex;
+align-items: center;
+`;
 
 const NavMenuLinks = styled(Link)`
 ${NavLink}
