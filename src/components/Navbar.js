@@ -12,7 +12,7 @@ padding: 1rem 2rem;
 z-index: 100;
 position: fixed;
 width: 100%;
-background: #000;
+background: red;
 `;
 
 const NavLink = css`
