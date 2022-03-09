@@ -41,6 +41,12 @@ const NavMenuLinks = styled(Link)`
 ${NavLink}
 `;
 
+const NavBtn = styled.div `
+display: flex;
+align-items: center;
+margin-right: 24px;
+`;
+
 
 const Navbar = () => {
   return (
