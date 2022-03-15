@@ -31,7 +31,7 @@ ${NavLink}
 font-style: italic;
 `;
 
-const MenuBars = styled.i`
+const MenuBars = styled(FaBars)`
 display: none;
 `;
 
