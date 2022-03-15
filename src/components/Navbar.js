@@ -3,6 +3,7 @@ import styled, {css} from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
+import {FaBars} from 'react-icons/fa'
 
 const Nav = styled.nav`
 height: 60px;
