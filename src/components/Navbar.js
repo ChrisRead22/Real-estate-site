@@ -33,6 +33,10 @@ font-style: italic;
 
 const MenuBars = styled(FaBars)`
 display: none;
+
+@media screen and (max-width: 768px) {
+  display: block;
+}
 `;
 
 const NavMenu = styled.div`
