@@ -8,10 +8,22 @@ position: relative;
 overflow: hidden;
 `;
 
+const HeroWrapper = styled.div`
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+position: relative;
+`;
+
 const Hero = () => {
   return (
     <HeroSection>
-        <h1>Hero</h1>
+      <HeroWrapper>
+      <h1>Hero</h1>
+      </HeroWrapper>
     </HeroSection>
   )
 }
