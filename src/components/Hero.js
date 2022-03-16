@@ -1,4 +1,10 @@
 import React from 'react'
+import styled, {css} from 'styled-components/macro'
+
+const HeroSection = styled.section`
+height:
+max-height:
+`
 
 const Hero = () => {
   return (
