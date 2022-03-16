@@ -2,15 +2,17 @@ import React from 'react'
 import styled, {css} from 'styled-components/macro'
 
 const HeroSection = styled.section`
-height:
-max-height:
-`
+height: 100vh;
+max-height: 1100px;
+position: relative;
+overflow: hidden;
+`;
 
 const Hero = () => {
   return (
-    <div>
+    <HeroSection>
         <h1>Hero</h1>
-    </div>
+    </HeroSection>
   )
 }
 
