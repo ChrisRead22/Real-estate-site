@@ -1,4 +1,4 @@
-exports const SliderData = [
+export const SliderData = [
     {
         title: 'Luxury Villa in Bali, Indonesia',
         price: '$4,280,000',
@@ -31,4 +31,4 @@ exports const SliderData = [
         image: ImageFour,
         alt: 'House'
     }
-]
+];
