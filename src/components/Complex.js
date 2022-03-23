@@ -1,6 +1,7 @@
 import React from 'react'
-import styled, {css} from 'styled-components/macro'
+import styled, {css} from 'styled-components/macro';
 import { Button } from './Button';
+import {IoMdArrowRoundForward} from 'react-icons/io';
 
 const ComplexSection = styled.section`
 height: 100vh;
@@ -23,6 +24,7 @@ const ComplexSlide = styled.div``;
 const ComplexSlider = styled.div``;
 const ComplexImage = styled.img``;
 const ComplexContent = styled.div``;
+const Arrow = styled(IoMdArrowRoundForward)``;
 
 const Complex = ({ slides }) => {
   return (
@@ -36,8 +38,13 @@ const Complex = ({ slides }) => {
                 <ComplexContent>
                   <h1>{slide.title}</h1>
                   <p>{slide.price}</p>
-                  <Button to={slide.path} primary="true">
+                  <Button to={slide.path} primary="true"
+                  css={`
+                  max-width: 160px;
+                  `}
+                  >
                     {slide.label}
+                    <Arrow />
                   </Button>
                 </ComplexContent>
             </ComplexSlider>
