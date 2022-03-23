@@ -1,3 +1,8 @@
+import ImageOne from '.../images/House1.jpeg'
+import ImageTwo from '.../images/House2.jpeg'
+import ImageThree from '.../images.House3.avif'
+import ImageFour from '.../images.House4.avif'
+
 export const SliderData = [
     {
         title: 'Luxury Villa in Bali, Indonesia',
