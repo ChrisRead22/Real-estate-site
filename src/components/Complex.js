@@ -18,7 +18,12 @@ overflow: hidden;
 position: relative;
 `;
 
-const Complex = () => {
+const ComplexSlide = styled.div``;
+const ComplexSlider = styled.div``;
+const ComplexImage = styled.img``;
+const ComplexContent = styled.div``;
+
+const Complex = ({ slides }) => {
   return (
     <ComplexSection>
       <ComplexWrapper>
@@ -28,7 +33,8 @@ const Complex = () => {
             <ComplexSlider>
               <ComplexImage/>
                 <ComplexContent>
-                  
+                  <h1>{slide.title}</h1>
+
                 </ComplexContent>
             </ComplexSlider>
           </ComplexSlide>
