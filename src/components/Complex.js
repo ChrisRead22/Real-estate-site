@@ -34,7 +34,8 @@ const Complex = ({ slides }) => {
               <ComplexImage/>
                 <ComplexContent>
                   <h1>{slide.title}</h1>
-
+                  <p>{slide.price}</p>
+                  
                 </ComplexContent>
             </ComplexSlider>
           </ComplexSlide>
