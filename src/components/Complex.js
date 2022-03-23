@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, {css} from 'styled-components/macro'
+import { Button } from './Button';
 
 const ComplexSection = styled.section`
 height: 100vh;
@@ -35,7 +36,9 @@ const Complex = ({ slides }) => {
                 <ComplexContent>
                   <h1>{slide.title}</h1>
                   <p>{slide.price}</p>
-                  
+                  <Button to={slide.path} primary="true">
+                    {slide.label}
+                  </Button>
                 </ComplexContent>
             </ComplexSlider>
           </ComplexSlide>
