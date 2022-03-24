@@ -2,6 +2,7 @@ import React from 'react'
 import styled, {css} from 'styled-components/macro';
 import { Button } from './Button';
 import {IoMdArrowRoundForward} from 'react-icons/io';
+import {IoArrowForward, IoArrowBack} from 'react-icons/io5';
 
 const ComplexSection = styled.section`
 height: 100vh;
@@ -49,11 +50,12 @@ const Complex = ({ slides }) => {
                 </ComplexContent>
             </ComplexSlider>
           </ComplexSlide>
-        )
-      })}
+        );
+      })};
+      
       </ComplexWrapper>
     </ComplexSection>
-  )
-}
+  );
+};
 
 export default Complex;
