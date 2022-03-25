@@ -4,6 +4,14 @@ import { Button } from './Button';
 import {IoMdArrowRoundForward} from 'react-icons/io';
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5';
 
+const SliderButtons = styled.div`
+position: absolute;
+bottom: 50px;
+right: 50px;
+display: flex;
+z-index: 10;
+`;
+
 const ComplexSection = styled.section`
 height: 100vh;
 max-height: 1100px;
@@ -44,6 +52,14 @@ transition: 0.3s;
   transform: scale(1.05);
 }
 `;
+
+const PrevArrow = styled(IoArrowBack)`
+${arrowButtons}
+`
+
+const NextArrow = styled(IoArrowForward)`
+${arrowButtons}
+`
 
 const Complex = ({ slides }) => {
   return (
