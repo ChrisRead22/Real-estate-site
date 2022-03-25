@@ -27,6 +27,24 @@ const ComplexImage = styled.img``;
 const ComplexContent = styled.div``;
 const Arrow = styled(IoMdArrowRoundForward)``;
 
+const arrowButtons = css`
+width: 50px;
+height: 50px;
+color: #fff;
+cursor: pointer;
+background: #000d1a;
+border-radius: 50px;
+padding: 10px;
+margin-right: 1rem;
+user-select: none;
+transition: 0.3s;
+
+&:hover {
+  background: #cd853f;
+  transform: scale(1.05);
+}
+`;
+
 const Complex = ({ slides }) => {
   return (
     <ComplexSection>
