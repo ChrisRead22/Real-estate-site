@@ -52,7 +52,10 @@ const Complex = ({ slides }) => {
           </ComplexSlide>
         );
       })};
-      
+      <SliderButtons>
+        <PrevArrow />
+        <NextArrow />
+      </SliderButtons>
       </ComplexWrapper>
     </ComplexSection>
   );
