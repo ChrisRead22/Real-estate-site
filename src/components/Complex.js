@@ -69,7 +69,7 @@ const Complex = ({ slides }) => {
         return (
           <ComplexSlide key={index}>
             <ComplexSlider>
-              <ComplexImage/>
+              <ComplexImage src={slide.image} alt={slide.alt} />
                 <ComplexContent>
                   <h1>{slide.title}</h1>
                   <p>{slide.price}</p>
