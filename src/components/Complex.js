@@ -35,9 +35,23 @@ width: 100%;
 height: 100%;
 `;
 
-const ComplexSlider = styled.div``;
-const ComplexImage = styled.img``;
+const ComplexSlider = styled.div`
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+`;
+
+const ComplexImage = styled.img`
+
+`;
+
 const ComplexContent = styled.div``;
+
 const Arrow = styled(IoMdArrowRoundForward)``;
 
 const arrowButtons = css`
