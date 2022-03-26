@@ -44,6 +44,23 @@ height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
+
+&::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  bottom: ovh;
+  left: 0;
+  overflow: hidden;
+  opacity: 0.4;
+  background: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.2) 0%,
+    rgba(0,0,0,0.2) 50%,
+    rgba(0,0,0,0.2) 100%);
+}
 `;
 
 const ComplexImage = styled.img`
