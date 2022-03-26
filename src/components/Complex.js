@@ -29,7 +29,12 @@ overflow: hidden;
 position: relative;
 `;
 
-const ComplexSlide = styled.div``;
+const ComplexSlide = styled.div`
+z-index: 1;
+width: 100%;
+height: 100%;
+`;
+
 const ComplexSlider = styled.div``;
 const ComplexImage = styled.img``;
 const ComplexContent = styled.div``;
