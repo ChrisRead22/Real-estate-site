@@ -164,7 +164,7 @@ const nextSlide = () => {
       })};
       <SliderButtons>
         <PrevArrow />
-        <NextArrow onClick/>
+        <NextArrow onClick={nextSlide} />
       </SliderButtons>
       </ComplexWrapper>
     </ComplexSection>
