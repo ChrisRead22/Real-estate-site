@@ -72,7 +72,20 @@ height: 100vh;
 object-fit: cover;
 `;
 
-const ComplexContent = styled.div``;
+const ComplexContent = styled.div`
+position: relative;
+z-index: 10;
+display: flex;
+flex-direction: column;
+max-width: 1600px;
+width: calc(100% - 100px);
+color: #fff;
+
+h1 {
+  
+}
+`;
+
 
 const Arrow = styled(IoMdArrowRoundForward)``;
 
