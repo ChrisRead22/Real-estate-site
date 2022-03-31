@@ -146,7 +146,8 @@ const prevSlide = () => {
       {slides.map((slide, index) => {
         return (
           <ComplexSlide key={index}>
-            <ComplexSlider>
+            {index === current && (
+              <ComplexSlider>
               <ComplexImage src={slide.image} alt={slide.alt} />
                 <ComplexContent>
                   <h1>{slide.title}</h1>
@@ -161,6 +162,7 @@ const prevSlide = () => {
                   </Button>
                 </ComplexContent>
             </ComplexSlider>
+            )}
           </ComplexSlide>
         );
       })};
