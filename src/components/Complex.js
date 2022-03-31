@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import styled, {css} from 'styled-components/macro';
 import { Button } from './Button';
 import {IoMdArrowRoundForward} from 'react-icons/io';
@@ -132,6 +132,10 @@ const [current, setCurrent] = useState(0)
 const length = slides.length
 const timeout = useRef(null)
 
+useEffect(() => {
+
+}, [current, length])
+
 const nextSlide = () => {
   setCurrent(current === length - 1 ? 0 : current + 1);
 };
@@ -139,6 +143,10 @@ const nextSlide = () => {
 const prevSlide = () => {
   setCurrent(current === 0 ? length - 1 : current - 1);
 };
+
+if(!Array.isArray(slides) || slides.length <= 0) {
+  return null
+}
 
   return (
     <ComplexSection>
