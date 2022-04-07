@@ -10,15 +10,18 @@ background: #cd853f;
 display: grid;
 align-items: center;
 top: 0;
+left: 0;
+transition: 0.3s ease-in-out;
+opacity: 1;
+top: 0;
+`;
 
-`
-
-function Dropdown() {
+const Dropdown = () => {
   return (
-    <div>
-        
-    </div>
-  )
-}
+    <DropdownContainer>
+        <h1>D</h1>
+    </DropdownContainer>
+  );
+};
 
 export default Dropdown
