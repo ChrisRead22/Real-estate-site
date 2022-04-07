@@ -19,7 +19,14 @@ top: 0;
 const Dropdown = () => {
   return (
     <DropdownContainer>
-        <h1>D</h1>
+        <Icon>
+          <CloseIcon />
+        </Icon>
+        <DropdownWrapper>
+          <DropdownMenu>
+            {menuData}
+          </DropdownMenu>
+        </DropdownWrapper>
     </DropdownContainer>
   );
 };
