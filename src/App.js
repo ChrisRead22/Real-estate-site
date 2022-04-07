@@ -10,6 +10,7 @@ function App() {
    <>
    <GlobalStyle />
    <Navbar />
+   <Dropdown />
    <Complex slides={SliderData}/>
    </>
   );
