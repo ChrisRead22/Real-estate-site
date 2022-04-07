@@ -24,8 +24,15 @@ const Dropdown = () => {
         </Icon>
         <DropdownWrapper>
           <DropdownMenu>
-            {menuData}
+            {menuData.map((item, index) => {
+                <DropdownLink to={item.link} key={index}>
+                  {item.title}
+                </DropdownLink>
+            })}
           </DropdownMenu>
+          <BtnWrap>
+            
+          </BtnWrap>
         </DropdownWrapper>
     </DropdownContainer>
   );
