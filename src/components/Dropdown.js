@@ -31,7 +31,9 @@ const Dropdown = () => {
             })}
           </DropdownMenu>
           <BtnWrap>
-            
+            <Button primary="true" round="true" big="true" to="/contact">
+              Contact Us
+            </Button>
           </BtnWrap>
         </DropdownWrapper>
     </DropdownContainer>
