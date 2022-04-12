@@ -31,11 +31,17 @@ cursor: pointer;
 outline: none;
 `;
 
-const CloseIcon = styled(FaTimes)``
-const DropdownWrapper = styled.div``
-const DropdownMenu = styled.div``
-const DropdownLink = styled(Link)``
-const BtnWrap = styled.div``
+const CloseIcon = styled(FaTimes)`
+  color: #000d1a;
+`;
+
+const DropdownWrapper = styled.div`
+  
+`;
+
+const DropdownMenu = styled.div``;
+const DropdownLink = styled(Link)``;
+const BtnWrap = styled.div``;
 
 const Dropdown = () => {
   return (
