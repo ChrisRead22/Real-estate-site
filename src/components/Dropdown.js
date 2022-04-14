@@ -71,7 +71,6 @@ const DropdownLink = styled(Link)`
 const BtnWrap = styled.div`
   display: flex;
   justify-content: center;
-  
 `;
 
 const Dropdown = () => {
