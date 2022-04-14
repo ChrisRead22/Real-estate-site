@@ -16,7 +16,7 @@ align-items: center;
 top: 0;
 left: 0;
 transition: 0.3s ease-in-out;
-opacity: 1;
+opacity: ${({isOpen}) => (isOpen ? '1' : '0')};
 top: 0;
 `;
 
