@@ -15,8 +15,8 @@ function App() {
   return (
    <>
    <GlobalStyle />
-   <Navbar />
-   <Dropdown />
+   <Navbar toggle={toggle}/>
+   <Dropdown isOpen={isOpen} toggle={toggle}/>
    <Complex slides={SliderData}/>
    </>
   );
