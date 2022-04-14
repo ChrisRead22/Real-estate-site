@@ -73,10 +73,10 @@ const BtnWrap = styled.div`
   justify-content: center;
 `;
 
-const Dropdown = () => {
+const Dropdown = ({isOpen, toggle}) => {
   return (
-    <DropdownContainer>
-        <Icon>
+    <DropdownContainer isOpen={isOpen} onClick={toggle}>
+        <Icon onClick={toggle}>
           <CloseIcon />
         </Icon>
         <DropdownWrapper>
