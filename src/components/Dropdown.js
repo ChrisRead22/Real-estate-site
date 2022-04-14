@@ -46,7 +46,7 @@ const DropdownMenu = styled.div`
   text-align: center;
   margin-bottom: 4rem;
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 480px) {
     grid-template-rows: repeat(4, 60px);
   }
 `;
@@ -68,7 +68,11 @@ const DropdownLink = styled(Link)`
   }
 `;
 
-const BtnWrap = styled.div``;
+const BtnWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  
+`;
 
 const Dropdown = () => {
   return (
