@@ -1,10 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const Section = styled.section``
+const Container = styled.div``
+const Container = styled.div``
 
 function InfoSection = () => {
   return (
-    <div>
-        <h1>Info</h1>
-    </div>
+    <Section>
+      <Container>
+        <ColumnLeft>
+
+        </ColumnLeft>
+        <ColumnRight>
+        </ColumnRight>
+      </Container>
+    </Section>
   );
 };
 
