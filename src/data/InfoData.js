@@ -6,4 +6,14 @@ export const InfoData = {
     image: ImageOne,
     reverse: false,
     delay: 100
-}
+};
+
+export const InfoDataTwo = {
+    heading: 'Modern Designs',
+    paragraphOne: 'lorem30',
+    paragraphTwo: '',
+    buttonLabel: 'View Homes',
+    image: ImageTwo,
+    reverse: true,
+    delay: 300
+};
