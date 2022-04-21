@@ -1,10 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Section = styled.section``
-const Container = styled.div``
-const ColumnLeft = styled.div``
-const ColumnRight = styled.div``
+const Section = styled.section`
+width: 100%;
+height: 100%;
+padding: 4rem 0rem;
+`;
+
+const Container = styled.div`
+padding: 3rem calc((100vw - 1300px) / 2);
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+`;
+
+const ColumnLeft = styled.div``;
+const ColumnRight = styled.div``;
 
 const InfoSection = ({heading, paragraphOne, paragraphTwo, buttonLabel, reverse, image}) => {
   return (
