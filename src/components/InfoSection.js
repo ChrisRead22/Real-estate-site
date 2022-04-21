@@ -11,10 +11,17 @@ const Container = styled.div`
 padding: 3rem calc((100vw - 1300px) / 2);
 display: grid;
 grid-template-columns: 1fr 1fr;
+grid-template-rows: 800px;
 
+@media screen and (max-width: 760px) {
+  grid-template-columns: 1fr;
+}
 `;
 
-const ColumnLeft = styled.div``;
+const ColumnLeft = styled.div`
+display: flex;
+`;
+
 const ColumnRight = styled.div``;
 
 const InfoSection = ({heading, paragraphOne, paragraphTwo, buttonLabel, reverse, image}) => {
