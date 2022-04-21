@@ -1,3 +1,7 @@
+import ImageOne from '../images/interior-1.jpg';
+import ImageTwo from '../images/house-5.jpg';
+
+
 export const InfoData = {
     heading: 'Explore our amazing homes',
     paragraphOne: 'lorem30',
