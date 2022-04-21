@@ -6,7 +6,7 @@ const Container = styled.div``
 const ColumnLeft = styled.div``
 const ColumnRight = styled.div``
 
-const InfoSection = ({}) => {
+const InfoSection = ({heading, paragraphOne, paragraphTwo, buttonLabel, reverse, image}) => {
   return (
     <Section>
       <Container>
