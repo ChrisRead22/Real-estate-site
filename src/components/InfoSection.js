@@ -1,5 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import {Button} from './Button';
 
 const Section = styled.section`
 width: 100%;
@@ -68,7 +69,7 @@ const InfoSection = ({heading, paragraphOne, paragraphTwo, buttonLabel, reverse,
           <h1>{heading}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
-          <Button to="/homes">{buttonLabel}</Button>
+          <Button to='/homes'>{buttonLabel}</Button>
         </ColumnLeft>
         <ColumnRight reverse={reverse}>
           <img src={image} alt="home" />
