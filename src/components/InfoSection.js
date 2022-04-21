@@ -26,10 +26,38 @@ align-items: flex-start;
 line-height: 1.4;
 padding: 1rem 2rem;
 order: ${({reverse}) => (reverse ? '2' : '1')};
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 6vw, 2rem);
+}
+
+p {
+  margin-bottom: 2rem
+}
 `;
 
 const ColumnRight = styled.div`
+padding: 1rem 2rem;
+order: ${({reverse}) => (reverse ? '1' : '2')};
+display: flex;
+justify-content: center;
+align-items: center;
 
+@media screen and (max-width: 768px) {
+  order: ${({reverse}) => (reverse ? '2' : '1')};
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: 90%;
+  }
+}
 `;
 
 const InfoSection = ({heading, paragraphOne, paragraphTwo, buttonLabel, reverse, image}) => {
